@@ -1,0 +1,159 @@
+/************************
+* CSS GLOBAL
+************************/
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC";
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p,
+li {
+  line-height: 180%;
+}
+
+/************************
+* CSS PAR SECTION
+************************/
+/* header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/lyon.webp);
+  background-position: center;
+  background-size: cover;
+  padding: 150px;
+  color: white;
+}
+
+header h1 {
+  font-size: 70px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+/* introduction */
+main section#introduction {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+}
+
+main section#introduction div {
+  margin: 0 2em;
+  text-align: left;
+}
+
+main section#introduction img {
+  width: 350px;
+  margin: 0 2em;
+}
+
+/* Plats Célèbres */
+main section#dishes ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+main section#dishes ul li {
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main section#dishes h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+main section#dishes img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+/* Restaurants */
+main section#restaurants .container {
+  display: flex;
+}
+
+main section#restaurants .container div {
+  padding: 1em 5em;
+}
+
+main section#restaurants img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-content h3 {
+  font-size: 18px;
+}
+
+.footer-contact p,
+.footer-social a {
+  font-size: 14px;
+}
+
+.footer-social a {
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+/*---------------------- MEDIA QUERIES ------------------------*/
+
+@media (max-width: 768px) {
+  main section#introduction {
+    flex-direction: column;
+  }
+
+  main section#introduction div {
+    text-align: center;
+  }
+
+  main section#dishes ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section#restaurants .container {
+    flex-direction: column;
+  }
+}
